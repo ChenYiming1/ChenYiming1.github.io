@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[测试 马上删除]]></title>
-    <url>%2F2017%2F07%2F12%2Fdemo2%2F</url>
-    <content type="text"><![CDATA[首先 Table API 是一种关系型API，类 SQL 的API，用户可以像操作表一样地操作数据，非常的直观和方便。用户只需要说需要什么东西，系统就会自动地帮你决定如何最高效地计算它，而不需要像 DataStream 一样写一大堆 Function，优化还得纯靠手工调优。另外，SQL 作为一个“人所皆知”的语言，如果一个引擎提供 SQL，它将很容易被人们接受。这已经是业界很常见的现象了。值得学习的是，Flink 的 Table API 与 SQL API 的实现，有 80% 的代码是共用的。所以当我们讨论 Table API 时，常常是指 Table &amp; SQL API。 Table &amp; SQL API 还有另一个职责，就是流处理和批处理统一的API层。Flink 在runtime层是统一的，因为Flink将批任务看做流的一种特例来执行，这也是 Flink 向外鼓吹的一点。然而在编程模型上，Flink 却为批和流提供了两套API （DataSet 和 DataStream）。为什么 runtime 统一，而编程模型不统一呢？ 在我看来，这是本末倒置的事情。用户才不管你 runtime 层是否统一，用户更关心的是写一套代码。这也是为什么现在 Apache Beam 能这么火的原因。所以 Table &amp; SQL API 就扛起了统一API的大旗，批上的查询会随着输入数据的结束而结束并生成有限结果集，流上的查询会一直运行并生成结果流。Table &amp; SQL API 做到了批与流上的查询具有同样的语法，因此不用改代码就能同时在批和流上跑。]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[测试]]></title>
     <url>%2F2017%2F07%2F12%2Fdemo%2F</url>
     <content type="text"><![CDATA[这是一级标题这是二级标题…… 最小的是六级标题 单个回车视为空格 连续回车 才能分段 行尾加两个空格，按一个回车即可段内换行。 表示引用文字内容。 这些文字为斜体 这些文字现实为粗体 直接把一个URL显示为超级连接：也可以这样：我的微博 这样显示图片：]]></content>
