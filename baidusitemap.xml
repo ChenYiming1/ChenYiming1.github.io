@@ -4,27 +4,30 @@
 
     
   <url>
-    <loc>http://yimingchen.com/2017/07/12/demo/</loc>
-    <lastmod>2017-07-13T16:40:20.000Z</lastmod>
+    <loc>http://yimingchen.com/2017/01/25/hello-world/</loc>
+    <lastmod>2017-07-18T05:24:36.000Z</lastmod>
     <data>
         <display>
-        <title>测试</title>
-        <pubTime>2017-07-12T01:38:41.000Z</pubTime>
+        <title>hello,world</title>
+        <pubTime>2017-01-25T05:47:43.000Z</pubTime>
         
          
            
+             
+              <breadCrumb title="随笔" url="http://yimingchen.com/categories/%E9%9A%8F%E7%AC%94/"/>
+          
         </display>
     </data>
     </url>
 
     
   <url>
-    <loc>http://yimingchen.com/2017/01/25/hello-world/</loc>
-    <lastmod>2017-07-13T16:37:45.000Z</lastmod>
+    <loc>http://yimingchen.com/2017/07/12/demo/</loc>
+    <lastmod>2017-07-17T09:09:20.000Z</lastmod>
     <data>
         <display>
-        <title>hello,world</title>
-        <pubTime>2017-01-25T05:47:43.000Z</pubTime>
+        <title></title>
+        <pubTime>2017-07-12T01:38:41.000Z</pubTime>
         
          
            
