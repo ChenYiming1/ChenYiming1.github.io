@@ -4,23 +4,8 @@
 
     
   <url>
-    <loc>http://yimingchen.com/2018/06/20/%E4%BB%8A%E5%A4%A9/</loc>
-    <lastmod>2018-06-20T12:00:20.898Z</lastmod>
-    <data>
-        <display>
-        <title>今天</title>
-        <pubTime>2018-06-20T12:00:20.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yimingchen.com/2017/01/25/%E7%AC%AC%E4%B8%80%E7%AF%87/</loc>
-    <lastmod>2018-06-20T11:58:05.144Z</lastmod>
+    <lastmod>2018-06-20T13:06:21.697Z</lastmod>
     <data>
         <display>
         <title>Hello World</title>
@@ -31,6 +16,21 @@
              
               <breadCrumb title="随笔" url="http://yimingchen.com/categories/%E9%9A%8F%E7%AC%94/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yimingchen.com/2018/06/20/%E4%BB%8A%E5%A4%A9/</loc>
+    <lastmod>2018-06-20T12:00:20.898Z</lastmod>
+    <data>
+        <display>
+        <title>今天</title>
+        <pubTime>2018-06-20T12:00:20.000Z</pubTime>
+        
+         
+           
         </display>
     </data>
     </url>
