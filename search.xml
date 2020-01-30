@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[今天]]></title>
+    <title><![CDATA[手工打造一个Servlet]]></title>
     <url>%2F2018%2F06%2F20%2F%E4%BB%8A%E5%A4%A9%2F</url>
     <content type="text"></content>
+      <categories>
+        <category>web开发</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2017%2F01%2F25%2F%E7%AC%AC%E4%B8%80%E7%AF%87%2F</url>
-    <content type="text"><![CDATA[我的独立博客终于搭建好了，仿佛拥有了一颗属于自己的小小星球。一颗远离其他星球的星球。正因为离得远，相遇才显得可贵。若你路过这里，不妨留下你的痕迹吧。]]></content>
+    <content type="text"><![CDATA[我的独立博客终于搭建好了，踩过无数的坑，过程就不记录了，无非就是遇到一个报错，Google找到解决办法，然后出现另一个报错，然后继续Google……总结的经验就是：保持耐心、不怕麻烦，并且善用搜索引擎，天下无难事。这里仅记录一下通过Hexo+Github Page搭建的博客如何绑定自己的域名。虽然搭建完成后通过yourname.github.io这种地址也能访问，但这样显然不够酷，作为一个爱折腾的人，我选择购买自己的域名。 购买域名我选择在Godaddy购买 与GitHub Pages绑定在github上面,打开yourname.github.io项目的（Settings）设置，然后在 GitHub Pages的 Custom domain设置里填上购买的域名。 设置DNS解析用DNSPod可以用微信直接登录，登录DNSPod之后选择DNS,按照提示操作，最后再到Godaddy里面把DNS修改一下，改成DNSPod里面的2个DNS短地址。大功告成。]]></content>
       <categories>
         <category>随笔</category>
       </categories>

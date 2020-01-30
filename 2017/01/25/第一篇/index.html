@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="我的独立博客终于搭建好了，仿佛拥有了一颗属于自己的小小星球。一颗远离其他星球的星球。正因为离得远，相遇才显得可贵。若你路过这里，不妨留下你的痕迹吧。">
+<meta name="description" content="我的独立博客终于搭建好了，踩过无数的坑，过程就不记录了，无非就是遇到一个报错，Google找到解决办法，然后出现另一个报错，然后继续Google……总结的经验就是：保持耐心、不怕麻烦，并且善用搜索引擎，天下无难事。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="http://chenyiming.me/2017/01/25/第一篇/index.html">
 <meta property="og:site_name" content="cym&#39;s Blog">
-<meta property="og:description" content="我的独立博客终于搭建好了，仿佛拥有了一颗属于自己的小小星球。一颗远离其他星球的星球。正因为离得远，相遇才显得可贵。若你路过这里，不妨留下你的痕迹吧。">
+<meta property="og:description" content="我的独立博客终于搭建好了，踩过无数的坑，过程就不记录了，无非就是遇到一个报错，Google找到解决办法，然后出现另一个报错，然后继续Google……总结的经验就是：保持耐心、不怕麻烦，并且善用搜索引擎，天下无难事。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-21T12:51:53.000Z">
+<meta property="og:updated_time" content="2020-01-30T14:19:27.122Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="我的独立博客终于搭建好了，仿佛拥有了一颗属于自己的小小星球。一颗远离其他星球的星球。正因为离得远，相遇才显得可贵。若你路过这里，不妨留下你的痕迹吧。">
+<meta name="twitter:description" content="我的独立博客终于搭建好了，踩过无数的坑，过程就不记录了，无非就是遇到一个报错，Google找到解决办法，然后出现另一个报错，然后继续Google……总结的经验就是：保持耐心、不怕麻烦，并且善用搜索引擎，天下无难事。">
 
 
 
@@ -390,8 +390,11 @@
       
 
       
-        <p>我的独立博客终于搭建好了，仿佛拥有了一颗属于自己的小小星球。一颗远离其他星球的星球。<br>正因为离得远，相遇才显得可贵。若你路过这里，不妨留下你的痕迹吧。</p>
-<a id="more"></a>
+        <p>我的独立博客终于搭建好了，踩过无数的坑，过程就不记录了，无非就是遇到一个报错，Google找到解决办法，然后出现另一个报错，然后继续Google……<br>总结的经验就是：保持耐心、不怕麻烦，并且善用搜索引擎，天下无难事。<br><a id="more"></a><br>这里仅记录一下通过Hexo+Github Page搭建的博客如何绑定自己的域名。虽然搭建完成后通过yourname.github.io这种地址也能访问，但这样显然不够酷，作为一个爱折腾的人，我选择购买自己的域名。</p>
+<h3 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h3><p>我选择在<a href="&quot;https://sso.godaddy.com&quot;">Godaddy</a>购买</p>
+<h3 id="与GitHub-Pages绑定"><a href="#与GitHub-Pages绑定" class="headerlink" title="与GitHub Pages绑定"></a>与GitHub Pages绑定</h3><p>在github上面,打开yourname.github.io项目的（Settings）设置，然后在 GitHub Pages的 Custom domain设置里填上购买的域名。</p>
+<h3 id="设置DNS解析"><a href="#设置DNS解析" class="headerlink" title="设置DNS解析"></a>设置DNS解析</h3><p>用<a href="&quot;https://www.dnspod.cn/&quot;">DNSPod</a><br>可以用微信直接登录，登录DNSPod之后选择DNS,按照提示操作，最后再到Godaddy里面把DNS修改一下，改成DNSPod里面的2个DNS短地址。<br>大功告成。</p>
+<!--  more  -->
 
       
     </div>
@@ -455,8 +458,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/06/20/今天/" rel="prev" title="今天">
-                今天 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/06/20/今天/" rel="prev" title="手工打造一个Servlet">
+                手工打造一个Servlet <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -507,8 +510,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image" src="/images/01.jpg" alt="cym">
           <p class="site-author-name" itemprop="name">cym</p>
@@ -538,6 +550,15 @@
             </div>
           
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
           
 
         </nav>
@@ -597,6 +618,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#购买域名"><span class="nav-number">1.</span> <span class="nav-text">购买域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#与GitHub-Pages绑定"><span class="nav-number">2.</span> <span class="nav-text">与GitHub Pages绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置DNS解析"><span class="nav-number">3.</span> <span class="nav-text">设置DNS解析</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
