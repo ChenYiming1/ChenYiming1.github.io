@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[手工打造一个Servlet]]></title>
-    <url>%2F2018%2F06%2F20%2F%E4%BB%8A%E5%A4%A9%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>web开发</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
+    <title><![CDATA[如何在mac上不借助IDE开发一个servlet程序]]></title>
+    <url>%2F2017%2F11%2F09%2F%E6%89%8B%E5%B7%A5%E6%89%93%E9%80%A0%E4%B8%80%E4%B8%AAservlet%2F</url>
+    <content type="text"><![CDATA[假设你已经安装好Java开发环境,你需要：1.下载tomcat2.创建一个Java文件和一个xml文件4.创建一个web应用的目录结构5.将xml和编译后的Java文件放入web应用目录里相应的位置6.将目录拷贝到tomat7.启动tomcat 下载tomcat打开官网,在Download栏选择一个版本，下载相应的zip,将其解压到一个临时目录,比如你的桌面。 创建一个名为myServlet.java和一个名为web.xml的文件可以在任意位置创建它们,然后用文本编辑器敲入如下代码：Java12345678910111213141516171819202122232425262728293031import java.io.IOException;import java.io.PrintWriter;import java.time.LocalDate;import javax.servlet.ServletException;import javax.servlet.http.HttpServlet;import javax.servlet.http.HttpServletRequest;import javax.servlet.http.HttpServletResponse;public class MyServlet extends HttpServlet &#123; @Override protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException &#123; PrintWriter out = response.getWriter(); LocalDate today = LocalDate.now(); response.setContentType(&quot;text/html;charset=utf-8&quot;); out.println(&quot;&lt;h1&gt;get Succeeded!&lt;/h1&gt;&quot; + &quot;&lt;p&gt;Today is:&quot; + today + &quot;&lt;/p&gt;&quot;); &#125; @Override protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException &#123; PrintWriter out = response.getWriter(); LocalDate today = LocalDate.now(); response.setContentType(&quot;text/html;charset=utf-8&quot;); out.println(&quot;&lt;h1&gt;post Succeeded!&lt;/h1&gt;&quot; + &quot;&lt;p&gt;Today is:&quot; + today + &quot;&lt;/p&gt;&quot;); &#125;&#125; xml1234567891011121314151617181920212223&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;web-app xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd&quot; version=&quot;4.0&quot; metadata-complete=&quot;true&quot;&gt; &lt;description&gt; Servlet Example. &lt;/description&gt; &lt;display-name&gt; MyServlet Example &lt;/display-name&gt; &lt;request-character-encoding&gt;UTF-8&lt;/request-character-encoding&gt; &lt;servlet&gt; &lt;servlet-name&gt;testServlet&lt;/servlet-name&gt; &lt;servlet-class&gt;MyServlet&lt;/servlet-class&gt; &lt;/servlet&gt; &lt;!--注意这两个servlet-name要保持一致--&gt; &lt;servlet-mapping&gt; &lt;servlet-name&gt;testServlet&lt;/servlet-name&gt; &lt;url-pattern&gt;/myservlet&lt;/url-pattern&gt; &lt;/servlet-mapping&gt;&lt;/web-app&gt; 在终端使用javac命令编译MyServlet.java1javac MyServlet.java 如果编译成功，MyServlet.java的同级目录会出现一个MyServlet.class文件。如果出现以下报错 则将tomcat/lib目录下的servlet-api.jar,拷贝到jdk安装目录下的/jre/lib/ext下。不知道jdk的安装目录在哪？在终端敲如下命令可以找到……1/usr/libexec/java_home -V 创建web应用的目录创建一个如下的目录结构(随便在哪创建),然后将web.xml拷贝到WEB-INF目录下、MyServlet.class拷贝到classes目录下。将整个demo目录拷贝到tomcat/webapps下。 启动tomcat用终端进入tomcat目录,主要目的是执行tomcat/bin里面的startup.sh(用于启动Tomcat)和shutdown.sh(关闭Tomcat(脚本),但由于默认是没有权限操作的，因此先执行下面这行命令授权:1chmod -R u+x ./bin 然后输入”./startup.sh”执行启动Tomcat(其中”./“代表当前目录下) 打开浏览器访问http://localhost:8080/demo/myservlet如果成功了,浏览器页面上会显示你在MyServlet.java里面的out.println语句里写下的内容。如果显示404，1.确保地址没输错 2.去tomcat/log里面把日志找出来看看。]]></content>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>%2F2017%2F01%2F25%2F%E7%AC%AC%E4%B8%80%E7%AF%87%2F</url>
+    <url>%2F2017%2F01%2F25%2FHelloWorld%2F</url>
     <content type="text"><![CDATA[我的独立博客终于搭建好了，踩过无数的坑，过程就不记录了，无非就是遇到一个报错，Google找到解决办法，然后出现另一个报错，然后继续Google……总结的经验就是：保持耐心、不怕麻烦，并且善用搜索引擎，天下无难事。这里仅记录一下通过Hexo+Github Page搭建的博客如何绑定自己的域名。虽然搭建完成后通过yourname.github.io这种地址也能访问，但这样显然不够酷，作为一个爱折腾的人，我选择购买自己的域名。 购买域名我选择在Godaddy购买 与GitHub Pages绑定在github上面,打开yourname.github.io项目的（Settings）设置，然后在 GitHub Pages的 Custom domain设置里填上购买的域名。 设置DNS解析用DNSPod可以用微信直接登录，登录DNSPod之后选择DNS,按照提示操作，最后再到Godaddy里面把DNS修改一下，改成DNSPod里面的2个DNS短地址。大功告成。]]></content>
       <categories>
         <category>随笔</category>
